@@ -20,22 +20,24 @@ Takes two Linestring, Polygon or MultiPolygon features and finds whether they ov
 
 ```js
 var poly1 = turf.polygon([[
-    [0, 0],
-    [0, 2],
-    [2, 2],
-    [2, 0],
-    [0, 0]
+  [0, 0],
+  [0, 2],
+  [2, 2],
+  [2, 0],
+  [0, 0]
 ]]);
 
 var poly2 = turf.polygon([[
-    [1, 1],
-    [1, 3],
-    [3, 3],
-    [3, 1],
-    [1, 1]
+  [1, 1],
+  [1, 3],
+  [3, 3],
+  [3, 1],
+  [1, 1]
 ]]);
 
 var overlapping = overlaps(poly1, poly2);
+
+// true
 ```
 
 ## Tests
