@@ -5,7 +5,6 @@ var fs = require('fs');
 var poly0 = JSON.parse(fs.readFileSync(__dirname+'/test/fixtures/in/polygon0.geojson'));
 var poly1 = JSON.parse(fs.readFileSync(__dirname+'/test/fixtures/in/polygon1.geojson'));
 var poly2 = JSON.parse(fs.readFileSync(__dirname+'/test/fixtures/in/polygon2.geojson'));
-// var simple = JSON.parse(fs.readFileSync(__dirname+'/test/fixtures/in/Intersect1.json'));
 var suite = new Benchmark.Suite('turf-overlaps');
 suite
   .add('turf-overlaps#polygons-overlap',function () {
