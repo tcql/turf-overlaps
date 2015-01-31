@@ -1,6 +1,6 @@
 {
   "name": "turf-overlaps",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "find whether spatial features overlap",
   "main": "index.js",
   "scripts": {
