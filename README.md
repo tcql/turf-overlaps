@@ -49,7 +49,7 @@ $ npm install --save turf-overlaps
 ## Usage
 
 ```js
-overlaps = require('turf-overlap');
+overlaps = require('turf-overlaps');
 
 var is_overlapping = overlap(poly1, poly2);
 ```
