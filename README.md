@@ -44,3 +44,7 @@ var overlapping = overlaps(poly1, poly2);
 $ npm test
 ```
 
+## Todo
+
+- Add tests for MultiPolygon
+- Add tests for testing overlaps for non-homogenous types (LineString vs Polygon, etc)
