@@ -1,4 +1,4 @@
-# turf-ext-overlaps
+# turf-overlaps
 
 find whether spatial features overlap
 
@@ -39,6 +39,21 @@ var overlapping = overlaps(poly1, poly2);
 
 // true
 ```
+
+## Installation
+
+```sh
+$ npm install --save turf-overlaps
+```
+
+## Usage
+
+```js
+overlaps = require('turf-overlap');
+
+var is_overlapping = overlap(poly1, poly2);
+```
+
 
 ## Tests
 
