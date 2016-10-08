@@ -25,20 +25,15 @@ function testLines(ring1, ring2) {
 }
 
 function getCoordinates(polygon) {
-  var coords = [[[]]];
-
   switch (polygon.geometry.type) {
     case 'LineString':
-      coords = [[polygon.geometry.coordinates]];
-      break;
+      return [[polygon.geometry.coordinates]];
     case 'Polygon':
-      coords = [polygon.geometry.coordinates];
-      break;
+      return [polygon.geometry.coordinates];
     case 'MultiPolygon':
-      coords = polygon.geometry.coordinates;
-      break;
+      return polygon.geometry.coordinates;
   }
-  return coords;
+  return [[[]]];
 }
 
 /**
